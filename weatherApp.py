@@ -10,7 +10,7 @@ city = input("Enter the Name of the City:   ")
 url = f"https://api.weatherapi.com/v1/current.json?key=5d6d981d57fd4344ab7150052252403&q={city}"
 
 r = requests.get(url)
-print(r.text)
+#print(r.text)
 wdic = json.loads(r.text)
 w = (wdic["current"]["temp_c"])
 t = (wdic["location"]["localtime"])
